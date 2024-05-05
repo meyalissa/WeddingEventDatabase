@@ -112,47 +112,47 @@ use weddingEvent;
 #('T09', 'Door Gifts', 'Available', 'Personalized wedding favors', 1000, 20.00), 
 #('T10', 'Wedding Shoes', 'Available', 'Stylish shoes', 15, 300.00); 
  
-#INSERT INTO SERVICE (service_ID, service_name, service_desc, service_cost) 
-#VALUES  
-#    ('S01', 'Catering', 'Full-course meal for guests', 800.00), 
-#    ('S02', 'Photography', 'Professional wedding photography', 500.00), 
-#    ('S03', 'DJ Services', 'Music and entertainment', 300.00), 
-#    ('S04', 'Florist', 'Floral arrangements and bouquets', 250.00), 
-#    ('S05', 'Wedding Cake', 'Customized cake suits the taste and theme', 300.00), 
-#    ('S06', 'Wedding Invitation', 'Design and print invitations', 150.00), 
-#    ('S07', 'Transportation', 'Arrange transportation for the wedding party', 500.00), 
-#    ('S08', 'Videography', 'Professional wedding videography', 560.00), 
-#    ('S09', 'Decoration', 'Decorate and customize the arrangement of table and chair', 750.00), 
-#    ('S10', 'MC', 'Master of ceremony who hosts an event', 550.00); 
+INSERT INTO SERVICE (service_ID, service_name, service_desc, service_cost) 
+VALUES  
+    ('S01', 'Catering', 'Full-course meal for guests', 800.00), 
+    ('S02', 'Photography', 'Professional wedding photography', 500.00), 
+    ('S03', 'DJ Services', 'Music and entertainment', 300.00), 
+    ('S04', 'Florist', 'Floral arrangements and bouquets', 250.00), 
+    ('S05', 'Wedding Cake', 'Customized cake suits the taste and theme', 300.00), 
+    ('S06', 'Wedding Invitation', 'Design and print invitations', 150.00), 
+    ('S07', 'Transportation', 'Arrange transportation for the wedding party', 500.00), 
+    ('S08', 'Videography', 'Professional wedding videography', 560.00), 
+    ('S09', 'Decoration', 'Decorate and customize the arrangement of table and chair', 750.00), 
+    ('S10', 'MC', 'Master of ceremony who hosts an event', 550.00); 
 
-#INSERT INTO WEDDING_INVENTORY(wedding_ID,item_ID,inventory_price,client_quantity) VALUES 
-#('W01', 'T01', 900.00, 1 ), 
-#('W02', 'T01', 900.00, 1 ), 
-#('W02', 'T02', 870.00, 1), 
-#('W03', 'T03', 200.00, 1), 
-#('W04', 'T03', 200.00, 1), 
-#('W04', 'T04', 750.00, 1), 
-#('W05', 'T05', 750.00, 15), 
-#('W06', 'T06', 700.00, 70), 
-#('W06', 'T07', 1600.00, 20), 
-#('W07', 'T07', 800.00, 10), 
-#('W08', 'T07', 400.00, 5), 
-#('W08', 'T08', 850.00, 1), 
-#('W09', 'T09', 2000.00, 100), 
-#('W10', 'T09', 5000.00, 250), 
-#('W10', 'T10', 600.00, 2); 
+INSERT INTO WEDDING_INVENTORY(wedding_ID,item_ID,inventory_price,client_quantity) VALUES 
+('W01', 'T01', 900.00, 1 ), 
+('W02', 'T01', 900.00, 1 ), 
+('W02', 'T02', 870.00, 1), 
+('W03', 'T03', 200.00, 1), 
+('W04', 'T03', 200.00, 1), 
+('W04', 'T04', 750.00, 1), 
+('W05', 'T05', 750.00, 15), 
+('W06', 'T06', 700.00, 70), 
+('W06', 'T07', 1600.00, 20), 
+('W07', 'T07', 800.00, 10), 
+('W08', 'T07', 400.00, 5), 
+('W08', 'T08', 850.00, 1), 
+('W09', 'T09', 2000.00, 100), 
+('W10', 'T09', 5000.00, 250), 
+('W10', 'T10', 600.00, 2); 
 
-#INSERT INTO PAYMENT(payment_ID,wedding_ID,payment_status, payment_date, payment_method) VALUES   
-#('P01', 'W01', 'Successful','2023-02-15', 'Credit Card'),   
-#('P02', 'W02', 'Pending'   ,'2024-06-01', 'Bank Transfer'),   
-#('P03', 'W03', 'Successful', '2023-09-20', 'Cash'),   
-#('P04', 'W04', 'Failed'    ,'2023-07-20', 'Bank Transfer'),   
-#('P05', 'W05', 'Pending'   ,'2023-05-10', 'Cash'),   
-#('P06', 'W06', 'Successful','2023-01-29', 'PayPal'),   
-#('P07', 'W07', 'Successful','2023-08-30', 'Cash'),   
-#('P08', 'W08', 'Pending'   ,'2023-11-10', 'Bank Transfer'),   
-#('P09', 'W09', 'Pending'  ,'2023-07-15', 'Credit Card'),   
-#('P10', 'W10', 'Pending'  ,'2023-06-01', 'Paypal')
+INSERT INTO PAYMENT(payment_ID,wedding_ID,payment_status, payment_date, payment_method) VALUES   
+('P01', 'W01', 'Successful','2023-02-15', 'Credit Card'),   
+('P02', 'W02', 'Pending'   ,'2024-06-01', 'Bank Transfer'),   
+('P03', 'W03', 'Successful', '2023-09-20', 'Cash'),   
+('P04', 'W04', 'Failed'    ,'2023-07-20', 'Bank Transfer'),   
+('P05', 'W05', 'Pending'   ,'2023-05-10', 'Cash'),   
+('P06', 'W06', 'Successful','2023-01-29', 'PayPal'),   
+('P07', 'W07', 'Successful','2023-08-30', 'Cash'),   
+('P08', 'W08', 'Pending'   ,'2023-11-10', 'Bank Transfer'),   
+('P09', 'W09', 'Pending'  ,'2023-07-15', 'Credit Card'),   
+('P10', 'W10', 'Pending'  ,'2023-06-01', 'Paypal')
 
 INSERT INTO WEDDING_SERVICE (wedding_ID, service_ID, service_Price) VALUES 
 ('W01', 'S01', 800.00), 
