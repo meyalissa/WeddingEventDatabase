@@ -100,17 +100,17 @@ use weddingEvent;
 #	('W09', 'Sarah Aqilah binti Yusoff ', 'Hakimi bin Ismail ', 'The Majestic Hotel, Kuala Lumpur ', '2023-11-09', 'Classic Black and White ', 4500.00, 600, 'Planned ', 'C06'), 
 #	('W10', 'Priya Sharma ', 'Arjun Patel ', 'Pahang Royal Residence, Pekan ', '2024-02-22', 'Enchanted Garden ', 7500.00, 900, 'Confirmed ', 'C07');  	
 
-#INSERT INTO INVENTORY (item_ID, item_name, item_status, item_desc, quantity_available, unit_price) VALUES 
-#('T01', 'Bride’s Wedding Gown', 'Available', 'Elegant white wedding gown', 2, 900.00), 
-#('T02', 'Suit', 'Available', 'Classic black-tie wedding suit', 3, 870.00), 
-#('T03', 'Bouquets', 'Available', 'Assorted floral bouquets', 4, 200.00), 
-#('T04', 'Lighting and Sound System', 'Available', 'Professional lighting and sound', 5, 750.00), 
-#('T05', 'Tables', 'Available', 'Round tables', 50, 50.00), 
-#('T06', 'Chairs', 'Available', 'White padded chairs', 150, 10.00), 
-#('T07', 'Decorations', 'Available', 'Various decorative items', 20, 80.00), 
-#('T08', 'Wedding Car', 'Available', 'Luxury car', 2, 850.00), 
-#('T09', 'Door Gifts', 'Available', 'Personalized wedding favors', 1000, 20.00), 
-#('T10', 'Wedding Shoes', 'Available', 'Stylish shoes', 15, 300.00); 
+INSERT INTO INVENTORY (item_ID, item_name, item_status, item_desc, quantity_available, unit_price) VALUES 
+('T01', 'Bride’s Wedding Gown', 'Available', 'Elegant white wedding gown', 2, 900.00), 
+('T02', 'Suit', 'Available', 'Classic black-tie wedding suit', 3, 870.00), 
+('T03', 'Bouquets', 'Available', 'Assorted floral bouquets', 4, 200.00), 
+('T04', 'Lighting and Sound System', 'Available', 'Professional lighting and sound', 5, 750.00), 
+('T05', 'Tables', 'Available', 'Round tables', 50, 50.00), 
+('T06', 'Chairs', 'Available', 'White padded chairs', 150, 10.00), 
+('T07', 'Decorations', 'Available', 'Various decorative items', 20, 80.00), 
+('T08', 'Wedding Car', 'Available', 'Luxury car', 2, 850.00), 
+('T09', 'Door Gifts', 'Available', 'Personalized wedding favors', 1000, 20.00), 
+('T10', 'Wedding Shoes', 'Available', 'Stylish shoes', 15, 300.00); 
  
 INSERT INTO SERVICE (service_ID, service_name, service_desc, service_cost) 
 VALUES  
