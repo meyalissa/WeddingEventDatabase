@@ -45,13 +45,13 @@ create table weddingEvent.Payment
     Payment_Method varchar (20) 
 ) 
 
-#create table weddingEvent.Service 
-#( 
-#	Service_ID varchar (10) primary key not null, 
-#    Service_Name varchar (20), 
-#    Service_Desc varchar (70), 
-#    Service_Cost decimal (6,2) 
-#) 
+create table weddingEvent.Service 
+( 
+	Service_ID varchar (10) primary key not null, 
+    Service_Name varchar (20), 
+    Service_Desc varchar (70), 
+    Service_Cost decimal (6,2) 
+) 
 
 #create table weddingEvent.Wedding_Service 
 #( 
