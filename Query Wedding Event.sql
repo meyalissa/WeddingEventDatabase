@@ -53,15 +53,15 @@ create table weddingEvent.Service
     Service_Cost decimal (6,2) 
 ) 
 
-#create table weddingEvent.Wedding_Service 
-#( 
-#    Wedding_ID varchar (10) not null, 
-#    Service_ID varchar (10) not null, 
-#    Service_Price decimal(6,2), 
-#    primary key (Wedding_ID, Service_ID), 
-#    foreign key (Wedding_ID) references Wedding (Wedding_ID), 
-#    foreign key (Service_ID) references Service (Service_ID) 
-#) 
+create table weddingEvent.Wedding_Service 
+( 
+    Wedding_ID varchar (10) not null, 
+    Service_ID varchar (10) not null, 
+    Service_Price decimal(6,2), 
+    primary key (Wedding_ID, Service_ID), 
+    foreign key (Wedding_ID) references Wedding (Wedding_ID), 
+    foreign key (Service_ID) references Service (Service_ID) 
+) 
 
 #create table weddingEvent.Wedding_Inventory 
 #(
