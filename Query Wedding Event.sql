@@ -1,49 +1,49 @@
-#create database weddingEvent;
+create database weddingEvent;
 
-#create table weddingevent.Client 
-#( 
-#    Client_ID  varchar(10) primary key not null, 
-#    Client_Fname varchar (20),  
-#    Client_Lname varchar (20), 
-#    Client_Phone varchar (12), 
-#    Client_Email varchar (50), 
-#    Client_Address varchar (100) 
-#) 
+create table weddingevent.Client 
+( 
+    Client_ID  varchar(10) primary key not null, 
+    Client_Fname varchar (20),  
+    Client_Lname varchar (20), 
+    Client_Phone varchar (12), 
+    Client_Email varchar (50), 
+    Client_Address varchar (100) 
+) 
 
-#create table weddingEvent.Wedding 
-#( 
-#	Wedding_ID varchar (10) primary key not null, 
-#    Client_ID varchar (10), 
-#    foreign key (Client_ID) references Client (Client_ID), 
-#    Bride_Name varchar (100), 
-#    Groom_Name varchar (100), 
-#    Wedding_Venue varchar (70), 
-#    Wedding_Date date, 
-#    Wedding_Theme varchar (50), 
-#    Wedding_Budget decimal (6,2), 
-#    Numb_Of_Guest integer, 
-#    Wedding_Status varchar (20) 
-#) 
+create table weddingEvent.Wedding 
+( 
+	Wedding_ID varchar (10) primary key not null, 
+    Client_ID varchar (10), 
+    foreign key (Client_ID) references Client (Client_ID), 
+    Bride_Name varchar (100), 
+    Groom_Name varchar (100), 
+    Wedding_Venue varchar (70), 
+    Wedding_Date date, 
+    Wedding_Theme varchar (50), 
+    Wedding_Budget decimal (6,2), 
+    Numb_Of_Guest integer, 
+    Wedding_Status varchar (20) 
+) 
 
-#create table weddingEvent.inventory
-#(
-#	item_ID varchar(10) primary key not null,
-#    item_name varchar(30),
-#    item_status varchar(20),
-#    item_desc varchar(50),
-#    quantity_available int,
-#    unit_price decimal(6,2)
-#)
+create table weddingEvent.inventory
+(
+	item_ID varchar(10) primary key not null,
+    item_name varchar(30),
+    item_status varchar(20),
+    item_desc varchar(50),
+    quantity_available int,
+    unit_price decimal(6,2)
+)
 
-#create table weddingEvent.Payment 
-#( 
-#    Payment_ID varchar (10) primary key not null, 
-#    Wedding_ID varchar (10), 
-#    foreign key (Wedding_ID) references Wedding (Wedding_ID), 
-#    Payment_Status varchar (20), 
-#    Payment_Date date, 
-#    Payment_Method varchar (20) 
-#) 
+create table weddingEvent.Payment 
+( 
+    Payment_ID varchar (10) primary key not null, 
+    Wedding_ID varchar (10), 
+    foreign key (Wedding_ID) references Wedding (Wedding_ID), 
+    Payment_Status varchar (20), 
+    Payment_Date date, 
+    Payment_Method varchar (20) 
+) 
 
 #create table weddingEvent.Service 
 #( 
